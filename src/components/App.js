@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class App extends Component {
-	render () {
+
+	state = {
+		pageHeader: 'Naming Contests',
+		contests: []
+	};
+	componentDidMount(){
+		this.setState(
+			contests: data.contests
+		)};
+	render() {
 		return (
 			<div className="text-center">
-				<h1>HEY</h1>
+				<Header message={this.state.pageHeader} />
 			</div> 
 		)
 	}
